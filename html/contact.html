@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Open Hand Healthcare Services</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        .hidden {
+          display: none;
+        }
+        .transition-height {
+      transition: height 0.3s ease;
+      overflow: hidden;
+    }
+      </style>
+</head>
+<body>
+    
+<!-- NavBar -->
+    <header>
+        <nav class="bg-white">
+            <div class="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
+              <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center">
+                  <!-- Logo -->
+                  <a class="navbar-brand" href="#"><img src="../images/ohms_logo-removebg-preview.png" alt="Logo" class="w-auto"></a>
+                </div>
+                <div class="flex flex-1 items-center justify-center md:items-stretch sm:justify-start">
+                  <div class="flex flex-shrink-0 items-center">
+                  </div>
+                  <div class="hidden lg:ml-6 lg:block">
+                    <div class="flex space-x-4">
+                      <a href="./index.html" class="rounded-md px-3 py-2 text-sm font-medium" aria-current="page">HOME</a>
+                      <a href="../html/about.html" class="rounded-md px-3 py-2 text-sm font-medium active">About US</a>
+                      <a href="#" class=" px-3 py-2 text-sm font-medium">Contact US</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
+                  <!-- Mobile menu button-->
+                  <button type="button" class="relative toggle inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMenu()">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="hidden transition-height lg:hidden" id="mobile-menu">
+              <div class="space-y-1 px-2 pb-3 pt-2">
+                <a href="../html/index.html" class="block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+                <a href="../html/about.html" class="active block rounded-md px-3 py-2 text-base font-medium">About Us</a>
+                <a href="#" class=" block rounded-md px-3py-2 text-base font-medium">Contact Us</a>
+              </div>
+            </div>
+          </nav>
+          
+          <script>
+            function toggleMenu() {
+              const menu = document.getElementById('mobile-menu');
+              if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.style.height = menu.scrollHeight + 'px';
+              } else {
+                menu.style.height = '0';
+                menu.addEventListener('transitionend', () => {
+                  menu.classList.add('hidden');
+                }, { once: true });
+              }
+            }
+          
+            function toggleUserMenu() {
+              const menu = document.getElementById('user-menu');
+              menu.classList.toggle('hidden');
+            }
+          </script>
+          
+          
+        
+      
+  
+      <div class="header">
+        <div class="logo">
+          <a class="navbar-brand" href="#"><img src="../images/ohms_logo-removebg-preview.png" alt=""></a>
+          
+        </div>
+        <div class="mail">
+          <a class= "mail-info" href=""><img src="../images/icons8-gmail-50.png" style="padding-bottom: 17px;" alt=""> 
+          </a> 
+          <h3>EMAIL ADDRESS<br><a href="mailto:openhandhealthcare@gmail.com">openhandhealthcare@gmail.com</a></h3>
+          <a class= "Call-info" href=""><img src="../images/icons8-phone-50.png" style="padding-bottom: 7px;" alt=""></a>
+          <h3>EMERGENCY CALL<br><a href="index.html">+1-443-251-8497</a></h3>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Starts Here -->
+    <main>
+        <!-- Welcome Banner -->
+        <section id="welcome-banner" data-aos="fade-up"  data-aos-once="true">
+          <div class="background-image">
+            <img src="../images/elderly care 1.png" alt="" class="background">
+            <img src="../images/realistic-scene-with-health-worker-taking-care-elderly-patient.jpg" alt="" class="background">
+            <img src="../images/social-worker-taking-care-old-woman.jpg" alt="" class="background">
+          </div>
+          <h1 class="font-mono font-extrabold text-left">CONTACT US</h1>
+         <h3 class="font-bold font-mono text-white pl-[90px] uppercase">Home | Contact Us</h3>
+        </section>
+        <!-- End of Welcome Banner -->
+<section>
+    
+      <!-- Your contact form HTML goes here -->
+      <div id="contacts" class="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-16 mx-auto bg-white text-gray-600 rounded-lg" data-aos="fade-up"  data-aos-once="true">
+        <div class="flex flex-col justify-center" data-aos="fade-up"  data-aos-once="true">
+            <div>
+                <h2 class="text-4xl text-blue-700 lg:text-5xl font-bold leading-tight">
+                    Lets talk about everything!
+                </h2>
+                <div class="text-gray-700 mt-8">
+                    Hate forms? Send us an&nbsp;
+                    <a class="underline" href="mailto:openhandhealthcareservices@gmail.com">
+                        email
+                    </a>
+                    instead.
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <img src="../images/doctor-talking-senior-man-indoors.jpg" alt="">
+            </div>
+        </div>
+    
+          <!-- Your contact form HTML goes here -->
+          <div class="contact-form" data-aos="fade-up"  data-aos-once="true">     
+        <form id="myForm" method="post" action="">
+            <div>
+                <span class="uppercase text-sm text-gray-600 font-bold">
+                    Full Name
+                </span>
+                <div><input type="text" class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"></div>
+            </div>
+            <div class="mt-8">
+                <span class="uppercase text-sm text-gray-600 font-bold">
+                    Email
+                </span>
+                <div><input type="text" class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"></div>
+            </div>
+            <div class="mt-8">
+                <span class="uppercase text-sm text-gray-600 font-bold">
+                    Phone Number
+                </span>
+                <div><input type="text" class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"></div>
+            </div>
+            <div class="mt-8">
+                <span class="uppercase text-sm text-gray-600 font-bold">
+                    Message
+                </span>
+                <div><input type="text" class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"></div>
+            </div>
+            <div class="mt-8">
+                <a href="./contact.html">
+                    <button
+                    class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-indigo-700"
+                    type="submit"
+                >
+                    Send Message
+                </button>   
+                </a>
+            </div>
+        </form>
+    </div>
+     
+    
+</section>
+ 
+<footer data-aos="fade-up"  data-aos-once="true" class="text-gray-600 body-font bg-[#054f6f]">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col ">
+    <div class="w-[300px] flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        
+        <span class="ml-3 font-mono font-bold text-white text-3xl">CONTACT</span>
+      </a>
+      <p class="mt-2 ml-3  text-white"><span class="text-blue-300 text-xl font-bold font-mono">OPEN HAND HEALTHCARE SERVICES INC</span> <br> 9635 Biggs Rd Middle River MD, 21220 <br> Tel. +1-443-251-8497. <br> Email: openhandhealthcare@gmail.com</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/2 md:w-1/2 w-full px-12">
+        <h2 class="title-font font-bold  text-3xl text-white   mb-3">MENU</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="./index.html" class="text-white hover:text-red-500 font-bold">Home</a>
+          </li>
+          <li>
+            <a href="../html/about.html" class="text-white hover:text-red-500 font-bold">About Us</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-red-500 font-bold">Contact Us</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/2 md:w-1/2 w-full px-12">
+        <h2 class="title-font font-bold  text-3xl text-white   mb-3">RELATED LINKS</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="./index.html" class="text-white hover:text-red-500 font-bold">Home</a>
+          </li>
+          <li>
+            <a href="../html/about.html" class="text-white hover:text-red-500 font-bold">About Us</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-red-500 font-bold">Contact Us</a>
+          </li>
+        </nav>
+      </div>
+     
+      
+    </div>
+  </div>
+  <div class="bg-[#096289]">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p data-aos="fade-up"  data-aos-once="true" class="text-white font-bold text-2xs font-mono text-center sm:text-left">COPYRIGHT © 2023 OPEN HAND HEALTHCARE SERVICES INC, INC. ALL RIGHTS RESERVED
+       
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+ 
+      
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      });
+    </script>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

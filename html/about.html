@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Open Hand Healthcare Services</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        .hidden {
+          display: none;
+        }
+        .transition-height {
+      transition: height 0.3s ease;
+      overflow: hidden;
+    }
+      </style>
+</head>
+<body>
+    
+<!-- NavBar -->
+    <header>
+        <nav class="bg-white">
+            <div class="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
+              <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center">
+                  <!-- Logo -->
+                  <a class="navbar-brand" href="#"><img src="../images/ohms_logo-removebg-preview.png" alt="Logo" class="w-auto"></a>
+                </div>
+                <div class="flex flex-1 items-center justify-center md:items-stretch sm:justify-start">
+                  <div class="flex flex-shrink-0 items-center">
+                  </div>
+                  <div class="hidden lg:ml-6 lg:block">
+                    <div class="flex space-x-4">
+                      <a href="./index.html" class="rounded-md px-3 py-2 text-sm font-medium" aria-current="page">HOME</a>
+                      <a href="../html/about.html" class="rounded-md px-3 py-2 text-sm font-medium active">About US</a>
+                      <a href="#" class=" px-3 py-2 text-sm font-medium">Contact US</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
+                  <!-- Mobile menu button-->
+                  <button type="button" class="relative toggle inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMenu()">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="hidden transition-height lg:hidden" id="mobile-menu">
+              <div class="space-y-1 px-2 pb-3 pt-2">
+                <a href="../html/index.html" class="block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+                <a href="../html/about.html" class="active block rounded-md px-3 py-2 text-base font-medium">About Us</a>
+                <a href="#" class=" block rounded-md px-3py-2 text-base font-medium">Contact Us</a>
+              </div>
+            </div>
+          </nav>
+          
+          <script>
+            function toggleMenu() {
+              const menu = document.getElementById('mobile-menu');
+              if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.style.height = menu.scrollHeight + 'px';
+              } else {
+                menu.style.height = '0';
+                menu.addEventListener('transitionend', () => {
+                  menu.classList.add('hidden');
+                }, { once: true });
+              }
+            }
+          
+            function toggleUserMenu() {
+              const menu = document.getElementById('user-menu');
+              menu.classList.toggle('hidden');
+            }
+          </script>
+          
+          
+        
+      
+  
+      <div class="header">
+        <div class="logo">
+          <a class="navbar-brand" href="#"><img src="../images/ohms_logo-removebg-preview.png" alt=""></a>
+          
+        </div>
+        <div class="mail">
+          <a class= "mail-info" href=""><img src="../images/icons8-gmail-50.png" style="padding-bottom: 17px;" alt=""> 
+          </a> 
+          <h3>EMAIL ADDRESS<br><a href="mailto:openhandhealthcare@gmail.com">openhandhealthcare@gmail.com</a></h3>
+          <a class= "Call-info" href=""><img src="../images/icons8-phone-50.png" style="padding-bottom: 7px;" alt=""></a>
+          <h3>EMERGENCY CALL<br><a href="index.html">+1-443-251-8497</a></h3>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Starts Here -->
+    <main>
+        <!-- Welcome Banner -->
+        <section id="welcome-banner" data-aos="fade-up"  data-aos-once="true">
+          <div class="background-image">
+            <img src="../images/elderly care 1.png" alt="" class="background">
+            <img src="../images/realistic-scene-with-health-worker-taking-care-elderly-patient.jpg" alt="" class="background">
+            <img src="../images/social-worker-taking-care-old-woman.jpg" alt="" class="background">
+          </div>
+          <h1 class="font-mono font-extrabold text-left">ABOUT US</h1>
+         <h3 class="font-bold font-mono text-white pl-[90px] uppercase">Home | About Us</h3>
+        </section>
+        <!-- End of Welcome Banner -->
+
+        <!-- About Section -->
+        <section id="About" style="background-color: whitesmoke;" data-aos="fade-up"  data-aos-once="true">
+            <div class="about mx-auto container flex lg:flex-row flex-col md:justify-center lg:justify-evenly  p-5 lg:p-2 xl:p-20">
+                <div class="about-1 p-5">
+                    <h1 class="text-red-500 text-2xs  pb-1 font-extrabold ">ABOUT US</h1>
+                    <h2 class="uppercase font-bold text-5xl text-blue-700 font-sans tracking-tight pb-5">Our Mission</h2>
+                    <P class="lg:w-[500px] w-[100%] font-sans text-gray-900" style="letter-spacing: .1rem; word-spacing: .1rem;" >OPEN HAND HEALTHCARE SERVICES INC is a 24-hour home care service
+                        specifically established and designed to provide quality cost-effective in-home nursing
+                        and personal care for the geriatric and medically impaired community. Our services
+                        make it possible to maintain as much independence in the home as possible. <br> <br>  By
+                        providing the appropriate in-home assistance and companionship, we aim to lift the
+                        spirits of not only our clients, but also of the family and caregivers. It is OPEN HAND
+                        HEALTHCARE SERVICES INC mission to provide the highest quality care and
+                        services that meet and exceed the expectations of the patient. OPEN HAND
+                        HEALTHCARE SERVICES INC is dedicated to hold paramount the welfare of the
+                        patient as we promote and enhance their quality of life.</P>
+                    <button class="bg-red-500 hover:bg-blue-700 p-4 mt-8 w-[250px] text-white text-xs font-sans uppercase font-bold  cursor-pointer">Book An Appointment</button>
+                </div>
+                <div class="about-2 p-5 mt-12">
+                    <img class="md:w-[850px] w-full rounded-[50px]" src="../images/doctor-talking-senior-man-indoors.jpg" alt="">
+            </div>
+
+        </section>
+        <!-- End of About Section -->
+
+        <div class="bg-white py-20 sm:py-32" data-aos="fade-up"  data-aos-once="true">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-2xl lg:text-center">
+                <h2 class="text-base font-semibold leading-7 uppercase text-red-500">Our Services</h2>
+                <p class="mt-2 text-3xl font-bold tracking-tight uppercase text-blue-700 sm:text-4xl">what we do here</p>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Open Hand Healthcare services , you have the advantage and
+                    convenience of receiving the best level of care at competitive pricings. Some of our
+                    supreme services consist of but are not limited to the following: chore services,
+                    companionship services, personal care services.</p>
+              </div>
+              <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+                <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-gray-900">
+                      <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                        <img src="../images/icons8-chores-50 (1).png" alt="">
+                      </div>
+                      Chore Services 
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-600">Housekeeping services which substitute for the regular activities necessary to maintain a safe, clean, healthy environment.  Chore services include but are not limited to the following: Light housekeeping, Laundry, Linen Changes, Vacuuming, Pet Care, Meal Preparation, Correspondence, Taking out trash, Holiday decorations</dd>
+                  </div>
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-gray-900">
+                      <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                       <img src="../images/icons8-family-50.png" alt="">
+                      </div>
+                      Companionship Services 
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-600">From daily telephone calls from a “Buddy”, to daily “Friendly” visitor, to round the clock paid companions.  Some of our companionship services are as follows: Conversation, Walks, Friendship, Laughter, reading a good book, mental stimulation, exploring life stories, enjoying new experiences, Lifting spirits</dd>
+                  </div>
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-gray-900">
+                      <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                        <img src="../images/icons8-health-50.png" alt="">
+                      </div>
+                      Personal Care Services 
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-600">Services which substitutes for the bodily activities of daily living which an individual would normally provide for himself/herself.  Personal Care Services may include, but are not necessarily limited to, the following services provided for the client: Bathing, Dressing, Feeding, Transferring, Care of teeth, skin, hair, and/or nails, Light meal preparation, Toileting, Ambulation</dd>
+                  </div>
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-gray-900">
+                      <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                        <img src="../images/icons8-volunteer-50.png" alt="">
+                      </div>
+                      Respite Services
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-600">A trained volunteer or para-professional stays with your loved one and take over your care giving role, whether for several hours or several days.  These brief reprieves from a care giving situation are healthy for the caregiver and also for the care recipient as a change of daily routine for both.</dd>
+                  </div>
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-gray-900">
+                      <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                       <img src="../images/icons8-care-50.png" alt="">
+                      </div>
+                      Complex Care Services 
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-600">The agency shall provide complex care services, wound care, tube feedings, administration of IV, Trach care and ventilator services.</dd>
+                  </div>
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-gray-900">
+                      <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                        <img src="../images/icons8-ambulance-50.png" alt="">
+                      </div>
+                      Transportation Services
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-600">Transporting to and from the following: Medical appointments, Shopping, Adult Day Centers</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+      
+      <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<div class="relative isolate overflow-hidden bg-white py-16 sm:py-24 lg:py-32" data-aos="fade-up"  data-aos-once="true">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+      <div class="max-w-xl lg:max-w-lg">
+        <h2 class="text-3xl font-bold tracking-tight text-[#096289] sm:text-4xl">Subscribe to our newsletter.</h2>
+        <p class="mt-4 text-lg leading-8 text-gray-600">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.</p>
+        <div class="mt-6 flex max-w-md gap-x-4">
+          <label for="email-address" class="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" style="border: 2px solid #096289;" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-[#096289] bg-white/5 px-3.5 py-2 text-gray-600 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
+          <button type="submit" class="flex-none rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#096289] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500">Subscribe</button>
+        </div>
+      </div>
+      <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+            </svg>
+          </div>
+          <dt class="mt-4 font-semibold text-[#096289]">Weekly articles</dt>
+          <dd class="mt-2 leading-7 text-gray-600">Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.</dd>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
+            </svg>
+          </div>
+          <dt class="mt-4 font-semibold text-[#096289]">No spam</dt>
+          <dd class="mt-2 leading-7 text-gray-600">Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+    <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+</div>
+
+ 
+<footer data-aos="fade-up"  data-aos-once="true" class="text-gray-600 body-font bg-[#054f6f]">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col ">
+    <div class="w-[300px] flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        
+        <span class="ml-3 font-mono font-bold text-white text-3xl">CONTACT</span>
+      </a>
+      <p class="mt-2 ml-3  text-white"><span class="text-blue-300 text-xl font-bold font-mono">OPEN HAND HEALTHCARE SERVICES INC</span> <br> 9635 Biggs Rd Middle River MD, 21220 <br> Tel. +1-443-251-8497. <br> Email: openhandhealthcare@gmail.com</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/2 md:w-1/2 w-full px-12">
+        <h2 class="title-font font-bold  text-3xl text-white   mb-3">MENU</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="./index.html" class="text-white hover:text-red-500 font-bold">Home</a>
+          </li>
+          <li>
+            <a href="../html/about.html" class="text-white hover:text-red-500 font-bold">About Us</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-red-500 font-bold">Contact Us</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/2 md:w-1/2 w-full px-12">
+        <h2 class="title-font font-bold  text-3xl text-white   mb-3">RELATED LINKS</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="./index.html" class="text-white hover:text-red-500 font-bold">Home</a>
+          </li>
+          <li>
+            <a href="../html/about.html" class="text-white hover:text-red-500 font-bold">About Us</a>
+          </li>
+          <li>
+            <a href="" class="text-white hover:text-red-500 font-bold">Contact Us</a>
+          </li>
+        </nav>
+      </div>
+     
+      
+    </div>
+  </div>
+  <div class="bg-[#096289]">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-white font-bold text-2xs font-mono text-center sm:text-left">COPYRIGHT © 2023 OPEN HAND HEALTHCARE SERVICES INC, INC. ALL RIGHTS RESERVED
+       
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+ 
+      
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      });
+    </script>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
