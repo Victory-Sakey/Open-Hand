@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Hand Healthcare Services</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <style>
@@ -26,16 +26,16 @@
               <div class="relative flex h-16 items-center justify-between">
                 <div class="absolute inset-y-0 left-0 flex items-center">
                   <!-- Logo -->
-                  <a class="navbar-brand" href="#"><img src="../images/ohms_logo-removebg-preview.png" alt="Logo" class="w-auto"></a>
+                  <a class="navbar-brand" href="#"><img src="./images/ohms_logo-removebg-preview.png" alt="Logo" class="w-auto"></a>
                 </div>
                 <div class="flex flex-1 items-center justify-center md:items-stretch sm:justify-start">
                   <div class="flex flex-shrink-0 items-center">
                   </div>
                   <div class="hidden lg:ml-6 lg:block">
                     <div class="flex space-x-4">
-                      <a href="../html/index.html" class="rounded-md px-3 py-2 active text-sm font-medium" aria-current="page">HOME</a>
-                      <a href="../html/about.html" class="rounded-md px-3 py-2 text-sm font-medium">About US</a>
-                      <a href="" class=" px-3 py-2 text-sm font-medium">Contact US</a>
+                      <a href="index.html" class="rounded-md px-3 py-2 active text-sm font-medium" aria-current="page">HOME</a>
+                      <a href="about.html" class="rounded-md px-3 py-2 text-sm font-medium">About US</a>
+                      <a href="contact.html" class=" px-3 py-2 text-sm font-medium">Contact US</a>
                     </div>
                   </div>
                 </div>
@@ -56,10 +56,9 @@
             <!-- Mobile menu, show/hide based on menu state. -->
             <div class="hidden transition-height lg:hidden" id="mobile-menu">
               <div class="space-y-1 px-2 pb-3 pt-2">
-                <a href="#" class="active block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-                <a href="#" class=" block rounded-md px-3 py-2 text-base font-medium">About Us</a>
-                <a href="#" class=" block rounded-md px-3 py-2 text-base font-medium">Our Services</a>
-                <a href="#" class=" block rounded-md px-3 py-2 text-base font-medium">Contact Us</a>
+                <a href="index.html" class="active block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+                <a href="about.html" class=" block rounded-md px-3 py-2 text-base font-medium">About Us</a>
+                <a href="contact.html" class=" block rounded-md px-3 py-2 text-base font-medium">Contact Us</a>
               </div>
             </div>
           </nav>
@@ -90,14 +89,14 @@
   
       <div class="header">
         <div class="logo">
-          <a class="navbar-brand" href="#"><img src="../images/ohms_logo-removebg-preview.png" alt=""></a>
+          <a class="navbar-brand" href="#"><img src="./images/ohms_logo-removebg-preview.png" alt=""></a>
           
         </div>
         <div class="mail">
-          <a class= "mail-info" href=""><img src="../images/icons8-gmail-50.png" style="padding-bottom: 17px;" alt=""> 
+          <a class= "mail-info" href=""><img src="./images/icons8-gmail-50.png" style="padding-bottom: 17px;" alt=""> 
           </a> 
           <h3>EMAIL ADDRESS<br><a href="mailto:openhandhealthcare@gmail.com">openhandhealthcare@gmail.com</a></h3>
-          <a class= "Call-info" href=""><img src="../images/icons8-phone-50.png" style="padding-bottom: 7px;" alt=""></a>
+          <a class= "Call-info" href=""><img src="./images/icons8-phone-50.png" style="padding-bottom: 7px;" alt=""></a>
           <h3>EMERGENCY CALL<br><a href="index.html">+1-443-251-8497</a></h3>
         </div>
       </div>
@@ -108,34 +107,34 @@
         <!-- Welcome Banner -->
         <section id="welcome-banner" data-aos="fade-up"  data-aos-once="true">
           <div class="background-image">
-            <img src="../images/elderly care 1.png" alt="" class="background">
-            <img src="../images/realistic-scene-with-health-worker-taking-care-elderly-patient.jpg" alt="" class="background">
-            <img src="../images/social-worker-taking-care-old-woman.jpg" alt="" class="background">
+            <img src="./images/elderly care 1.png" alt="" class="background">
+            <img src="./images/realistic-scene-with-health-worker-taking-care-elderly-patient.jpg" alt="" class="background">
+            <img src="./images/social-worker-taking-care-old-woman.jpg" alt="" class="background">
           </div>
           <h1>HIGHEST QUALITY CARE & SERVICES</h1>
-          <a href="../html/about.html"><button>Get Started</button></a>
+          <a href="about.html"><button>Get Started</button></a>
         </section>
         <!-- End of Welcome Banner -->
 
         <!-- About Section -->
-        <section id="About" data-aos="fade-up"  data-aos-once="true">
+        <section id="About">
             <div class="about mx-auto container flex lg:flex-row flex-col md:justify-center lg:justify-evenly  p-5 lg:p-2 xl:p-20">
-                <div class="about-1 p-5">
+                <div class="about-1 p-5" data-aos="fade-up"  data-aos-once="true">
                     <h1 class="text-red-500 text-2xs  pb-3 font-extrabold ">ABOUT US</h1>
                     <P class="text-gray-950 text-left  text-4xl lg:text-4xl xl:text-5xl font-sans w-[100%] xl:w-[550px] lg:w-[450px] font-bold uppercase" style="letter-spacing: .1rem; word-spacing: .1rem;" >We are a 24-hour home care service established to provide quality in-home nursing and personal care.</P>
-                    <button class="bg-red-500 p-4 mt-8 w-[200px] text-white text-xs font-sans uppercase font-bold  cursor-pointer" data-aos="fade-up"  data-aos-once="true">Our Services</button>
+                    <button class="bg-red-500 p-4 mt-8 w-[200px] text-white text-xs font-sans uppercase font-bold  cursor-pointer">Our Services</button>
                 </div>
-                <div class="about-2 pt-8 p-5 pb-4">
+                <div class="about-2 pt-8 p-5 pb-4" data-aos="fade-up"  data-aos-once="true">
                     <p class="text-gray-500 font-sans  text-[18px] w-[100%] text-left">
                       Our services make it possible to maintain as much independence in the home as possible.  By providing the appropriate in-home assistance and companionship, we aim to lift the spirits of not only our clients, but also of the family and caregivers. 
                     </p>
-                        <div class="buttons mt-11 justify-evenly lg:justify-evenly flex md:flex-row flex-col">
+                        <div class="buttons mt-11 lg:block hidden justify-evenly lg:justify-evenly flex md:flex-row flex-col">
                             <div class="button-1 p-5 items-center flex mb-5 lg:mb-0 " style="border: 2px solid rgb(240, 236, 236); border-radius: 2px;">
-                                <img src="../images/icons8-heart-rate-50.png" alt="">
+                                <img src="./images/icons8-heart-rate-50.png" alt="">
                                 <h1 class="pl-5 lg:pl-2 lg:w-[120px] w-full uppercase font-bold">Daily Heart Checkup</h1>
                             </div>
                             <div class="button-2 flex  p-5 items-center" style="border: 2px solid rgb(240, 236, 236); border-radius: 2px;">
-                                <img src="../images/icons8-heart-puzzle-50.png" alt="">
+                                <img src="./images/icons8-heart-puzzle-50.png" alt="">
                                 <h1 class="pl-5 lg:pl-2 w-full lg:w-[120px] uppercase font-bold">Timely food and medcine</h1>
                             </div>
                         </div>
@@ -146,8 +145,8 @@
         <!-- End of About Section -->
 
          <!-- Stats Section -->
-         <div class="relative isolate overflow-hidden py-24 sm:py-32" data-aos="fade-up"  data-aos-once="true">
-          <img src="../images/female-nurse-doing-checkup-consultation-with-old-patient-hospital-waiting-area-having-walking-frame-medical-assistant-writing-clinical-report-appointment-form-health-center.jpg" alt="" class="absolute inset-0 z-0 h-full w-full object-cover object-right md:object-center">
+         <div class="relative isolate overflow-hidden py-24 sm:py-32">
+          <img src="./images/female-nurse-doing-checkup-consultation-with-old-patient-hospital-waiting-area-having-walking-frame-medical-assistant-writing-clinical-report-appointment-form-health-center.jpg" alt="" class="absolute inset-0 z-0 h-full w-full object-cover object-right md:object-center">
           <div class="absolute inset-0 z-10 bg-blue-900 opacity-70"></div>
           <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 z-20 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
               <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-red-500 to-blue-400 opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
@@ -156,12 +155,12 @@
               <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-red-500 to-blue-400 opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
           </div>
           <div class="relative z-30 mx-auto max-w-7xl px-6 lg:px-8">
-              <div class="mx-auto max-w-2xl lg:mx-0">
+              <div class="mx-auto max-w-2xl lg:mx-0" data-aos="fade-up"  data-aos-once="true">
                   <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl z-50">OUR SERVICES</h2>
                   <p class="mt-6 text-lg leading-8 text-gray-300 z-50">We provide excellent care for the geriatric and medically impaired community. Open Hand Healthcare services is established and operated by seasoned registered licensed nurses and skilled aides, with many years of experience in the home healthcare and geriatric nursing.</p>
               </div>
               <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none z-50">
-                  <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+                  <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10" data-aos="fade-up"  data-aos-once="true">
                       <a href="#">Chore Services<span aria-hidden="true">&rarr;</span></a>
                       <a href="#">Companionship Services<span aria-hidden="true">&rarr;</span></a>
                       <a href="#">Personal Care Services<span aria-hidden="true">&rarr;</span></a>
@@ -169,24 +168,7 @@
                       <a href="#">Complex Care Services <span aria-hidden="true">&rarr;</span></a>
                       <a href="#">Transportation Services<span aria-hidden="true">&rarr;</span></a>
                   </div>
-                  <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-                      <div class="flex flex-col-reverse">
-                          <dt class="text-base leading-7 text-gray-300">Offices worldwide</dt>
-                          <dd class="text-2xl font-bold leading-9 tracking-tight text-white">12</dd>
-                      </div>
-                      <div class="flex flex-col-reverse">
-                          <dt class="text-base leading-7 text-gray-300">Full-time colleagues</dt>
-                          <dd class="text-2xl font-bold leading-9 tracking-tight text-white">300+</dd>
-                      </div>
-                      <div class="flex flex-col-reverse">
-                          <dt class="text-base leading-7 text-gray-300">Hours per week</dt>
-                          <dd class="text-2xl font-bold leading-9 tracking-tight text-white">40</dd>
-                      </div>
-                      <div class="flex flex-col-reverse">
-                          <dt class="text-base leading-7 text-gray-300">Paid time off</dt>
-                          <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Unlimited</dd>
-                      </div>
-                  </dl>
+                
               </div>
           </div>
       </div>
@@ -205,67 +187,29 @@
   }
   ```
 -->
-<div class="relative isolate overflow-hidden bg-white py-16 sm:py-24 lg:py-32" data-aos="fade-up"  data-aos-once="true">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-      <div class="max-w-xl lg:max-w-lg">
-        <h2 class="text-3xl font-bold tracking-tight text-[#096289] sm:text-4xl">Subscribe to our newsletter.</h2>
-        <p class="mt-4 text-lg leading-8 text-gray-600">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.</p>
-        <div class="mt-6 flex max-w-md gap-x-4">
-          <label for="email-address" class="sr-only">Email address</label>
-          <input id="email-address" name="email" type="email" style="border: 2px solid #096289;" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-[#096289] bg-white/5 px-3.5 py-2 text-gray-600 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
-          <button type="submit" class="flex-none rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#096289] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500">Subscribe</button>
-        </div>
-      </div>
-      <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
-        <div class="flex flex-col items-start">
-          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-            <svg class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-            </svg>
-          </div>
-          <dt class="mt-4 font-semibold text-[#096289]">Weekly articles</dt>
-          <dd class="mt-2 leading-7 text-gray-600">Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.</dd>
-        </div>
-        <div class="flex flex-col items-start">
-          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-            <svg class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
-            </svg>
-          </div>
-          <dt class="mt-4 font-semibold text-[#096289]">No spam</dt>
-          <dd class="mt-2 leading-7 text-gray-600">Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.</dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-  <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
-    <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-  </div>
-</div>
 
  
-<footer class="text-gray-600 body-font bg-[#054f6f]" data-aos="fade-up"  data-aos-once="true">
+<footer class="text-gray-600 body-font bg-[#054f6f]" >
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col ">
-    <div class="w-[300px] flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+    <div class="w-[300px] flex-shrink-0 md:mx-0 mx-auto text-center md:text-left" data-aos="fade-up"  data-aos-once="true">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
         
         <span class="ml-3 font-mono font-bold text-white text-3xl">CONTACT</span>
       </a>
       <p class="mt-2 ml-3  text-white"><span class="text-blue-300 text-xl font-bold font-mono">OPEN HAND HEALTHCARE SERVICES INC</span> <br> 9635 Biggs Rd Middle River MD, 21220 <br> Tel. +1-443-251-8497. <br> Email: openhandhealthcare@gmail.com</p>
     </div>
-    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center" data-aos="fade-up"  data-aos-once="true">
       <div class="lg:w-1/2 md:w-1/2 w-full px-12">
         <h2 class="title-font font-bold  text-3xl text-white   mb-3">MENU</h2>
         <nav class="list-none mb-10">
           <li>
-            <a href="./index.html" class="text-white hover:text-red-500 font-bold">Home</a>
+            <a href="index.html" class="text-white hover:text-red-500 font-bold">Home</a>
           </li>
           <li>
-            <a href="../html/about.html" class="text-white hover:text-red-500 font-bold">About Us</a>
+            <a href="./about.html" class="text-white hover:text-red-500 font-bold">About Us</a>
           </li>
           <li>
-            <a href="" class="text-white hover:text-red-500 font-bold">Contact Us</a>
+            <a href="contact.html" class="text-white hover:text-red-500 font-bold">Contact Us</a>
           </li>
         </nav>
       </div>
@@ -276,10 +220,10 @@
             <a href="./index.html" class="text-white hover:text-red-500 font-bold">Home</a>
           </li>
           <li>
-            <a href="../html/about.html" class="text-white hover:text-red-500 font-bold">About Us</a>
+            <a href="about.html" class="text-white hover:text-red-500 font-bold">About Us</a>
           </li>
           <li>
-            <a href="" class="text-white hover:text-red-500 font-bold">Contact Us</a>
+            <a href="./contact.html" class="text-white hover:text-red-500 font-bold">Contact Us</a>
           </li>
         </nav>
       </div>
@@ -288,8 +232,8 @@
     </div>
   </div>
   <div class="bg-[#096289]" >
-    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-white font-bold text-2xs font-mono text-center sm:text-left" data-aos="fade-up"  data-aos-once="true">COPYRIGHT © 2023 OPEN HAND HEALTHCARE SERVICES INC, INC. ALL RIGHTS RESERVED
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row" data-aos="fade-up"  data-aos-once="true">
+      <p class="text-white font-bold text-2xs font-mono text-center sm:text-left">COPYRIGHT © 2023 OPEN HAND HEALTHCARE SERVICES INC, INC. ALL RIGHTS RESERVED
        
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
@@ -331,6 +275,6 @@
   });
 </script>
 
-    <script src="../js/app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
